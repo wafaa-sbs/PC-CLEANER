@@ -1,0 +1,15 @@
+C:\Users\Youcode\source\repos\WpfApp2\updater\bin\Debug\updater.exe.config
+C:\Users\Youcode\source\repos\WpfApp2\updater\bin\Debug\updater.exe
+C:\Users\Youcode\source\repos\WpfApp2\updater\bin\Debug\updater.pdb
+C:\Users\Youcode\source\repos\WpfApp2\updater\obj\Debug\MainWindow.g.cs
+C:\Users\Youcode\source\repos\WpfApp2\updater\obj\Debug\App.g.cs
+C:\Users\Youcode\source\repos\WpfApp2\updater\obj\Debug\updater_MarkupCompile.cache
+C:\Users\Youcode\source\repos\WpfApp2\updater\obj\Debug\updater_MarkupCompile.lref
+C:\Users\Youcode\source\repos\WpfApp2\updater\obj\Debug\MainWindow.baml
+C:\Users\Youcode\source\repos\WpfApp2\updater\obj\Debug\updater.g.resources
+C:\Users\Youcode\source\repos\WpfApp2\updater\obj\Debug\updater.Properties.Resources.resources
+C:\Users\Youcode\source\repos\WpfApp2\updater\obj\Debug\updater.csproj.GenerateResource.cache
+C:\Users\Youcode\source\repos\WpfApp2\updater\obj\Debug\updater.csproj.CoreCompileInputs.cache
+C:\Users\Youcode\source\repos\WpfApp2\updater\obj\Debug\updater.exe
+C:\Users\Youcode\source\repos\WpfApp2\updater\obj\Debug\updater.pdb
+C:\Users\Youcode\source\repos\WpfApp2\updater\obj\Debug\updater.csprojAssemblyReference.cache

@@ -1,0 +1,68 @@
+﻿<Window x:Class="WpfApp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="545.882" Width="908.236" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid Margin="0,0,4,1.667" >
+        <Grid.Background>
+            <ImageBrush ImageSource="téléchargement.jpg"/>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Border HorizontalAlignment="Left" Height="515" VerticalAlignment="Top" Width="195"/>
+        <Button x:Name="btn_vue" Content="Vue d'ensempble" Foreground="White" FontSize="18" BorderBrush="white" Background="#FF21209C" HorizontalAlignment="Left" Padding="30,0,0,0" Margin="0,179,0,0" VerticalAlignment="Top" Width="195" Height="56" />
+        <Button x:Name="btn_option" Content="Option" Foreground="White" FontSize="18" BorderBrush="white" Background="#FF21209C" HorizontalAlignment="Left" Margin="0,348,0,0" VerticalAlignment="Top" Width="195" Height="56"/>
+        <Button x:Name="btn_histo" Content="Historique" Foreground="White" FontSize="18" BorderBrush="white" Background="#FF21209C" HorizontalAlignment="Left" Margin="0,264,0,0" VerticalAlignment="Top" Width="195" Height="56"/>
+        <Border HorizontalAlignment="Left" Height="156" Margin="195,0,-2.667,0" VerticalAlignment="Top" Width="705"></Border>
+        <Button x:Name="btn_analyse" Content="Analyse" Foreground="White" FontWeight="Medium" FontSize="20" BorderBrush="#FF2A5DE2" Background="#FF21209C" HorizontalAlignment="Left" Margin="710,65,0,0" VerticalAlignment="Top" Width="137" Height="46" RenderTransformOrigin="0.443,1.222" Click="Analyse_Click">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.175"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="btn_site" Content="Site Web" Foreground="White" FontSize="20" FontWeight="Medium" BorderBrush="#1f3c88" Background="Black" HorizontalAlignment="Left" Margin="22,435,0,0" VerticalAlignment="Top" Width="126" Height="39"/>
+        <Image Visibility="Visible" HorizontalAlignment="Left" Height="121" Margin="33,21,0,0" VerticalAlignment="Top" Width="119" >
+            <Image.OpacityMask>
+                <ImageBrush ImageSource="logo1.png"/>
+            </Image.OpacityMask>
+        </Image>
+        <Border HorizontalAlignment="Left" Height="81" Margin="195,435,-1.333,0" VerticalAlignment="Top" Width="705">
+            <TextBlock HorizontalAlignment="Left" FontSize="15" FontWeight="Medium" Height="47" Margin="28.667,15.667,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="622"><Run Text="Clean My Or:"/><Run Text=" "/><Run Text="Est un logiciel made in Morocco qui respect votre vie privée."/><LineBreak/><Run Text="C'est gratuit et ça restra."/></TextBlock>
+        </Border>
+        <Image x:Name="img_vue" HorizontalAlignment="Left" Height="37" VerticalAlignment="Top" Width="33" Margin="8,189,0,0" Source="broom.png" />
+        <Image x:Name="img_historique" HorizontalAlignment="Left" Height="35" VerticalAlignment="Top" Width="34" Margin="10,277,0,0" Source="history (2).png"/>
+        <Image x:Name="img_option" HorizontalAlignment="Left" Height="22" VerticalAlignment="Top" Width="27" Margin="22,364,0,0" />
+
+        <Border HorizontalAlignment="Left" Height="279" VerticalAlignment="Top" Width="704" Margin="195,156,-0.333,0">
+            <Border.Background>
+                <ImageBrush/>
+            </Border.Background>
+
+        </Border>
+
+        <Button x:Name="btn_nettoyer" Content="Nettoyer" HorizontalAlignment="Right" VerticalAlignment="Top" Width="156" Margin="0,208,470.667,0" Padding="0,90,0,0" Height="178" BorderBrush="#FF133EB4" Background="Black" Foreground="White" FontSize="20"  Click="nettoyer_click"/>
+        <Button x:Name="btn_maj" Content="maj" HorizontalAlignment="Left" VerticalAlignment="Top" Width="156" Margin="666,208,0,0" Padding="0,90,0,0" Height="178" Background="Black" Foreground="White" FontSize="20" BorderBrush="#FF5661D3"/>
+        <Button x:Name="btn_historique" Content="Historique" HorizontalAlignment="Left" VerticalAlignment="Top" Width="156" Margin="468,206,0,0" Padding="0,90,0,0" Height="178" Background="Black" Foreground="White" FontSize="20" Click="historique_click" BorderBrush="#FF5661D3"/>
+        <Image HorizontalAlignment="Left" Height="86" VerticalAlignment="Top" Width="87" Margin="507,236,0,0" Source="history (2).png"/>
+        <Image HorizontalAlignment="Left" Height="79" Margin="312,236,0,0" VerticalAlignment="Top" Width="81" Source="broom.png" RenderTransformOrigin="0.626,1.024"/>
+        <Image HorizontalAlignment="Left" Height="79" Margin="704,238,0,0" VerticalAlignment="Top" Width="81" Source="refresh.png" RenderTransformOrigin="0.626,1.024"/>
+        <Label x:Name="lbl_analyse_pc" Content="Analyse du PC nécessaire" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="241,16,0,0" Width="419" FontSize="24" FontWeight="Bold" Foreground="White"/>
+        <Label x:Name="lbl_title_nett" Content="Espace à nettoyer :   à déterminer par analyse" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="241,58,0,0" Width="353" FontSize="14" Foreground="#FFFEFEFE"/>
+       
+        <Label x:Name="lbl_title_analyse" Content="Dernière analyse :" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="241,87,0,0" Width="133" Foreground="White"/>
+        <Label x:Name="lbl_analyse" Content="------------------" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="349,88,0,0" Width="189" Foreground="White"/>
+        <Label x:Name="lbl_title_maj" Content="Derniére MAJ :" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="241,113,0,0" Width="93" Foreground="White"/>
+        <Label x:Name="lbl_maj" Content="-----------------" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="334,116,0,0" Width="163" Foreground="White"/>
+        <ProgressBar x:Name="progress" Visibility="Hidden" Value="0" Minimum="0"  Maximum="100" Height="40" Margin="224,73,261.667,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="progress_pourc" Visibility="Hidden"  TextWrapping="Wrap" Text="" VerticalAlignment="Top" Margin="400,78,433.667,0" Height="30" Background="{x:Null}"/>
+    
+    </Grid>
+</Window>
