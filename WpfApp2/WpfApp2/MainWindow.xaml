@@ -52,7 +52,7 @@
         <Label x:Name="lbl_maj" Content="-----------------" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="334,116,0,0" Width="163"/>
         <ProgressBar x:Name="progress" Visibility="Hidden" Value="0" Minimum="0"  Maximum="100" Height="40" Margin="224,73,261.667,0" VerticalAlignment="Top"/>
         <TextBox x:Name="progress_pourc" Visibility="Hidden"  TextWrapping="Wrap" Text="" VerticalAlignment="Top" Margin="400,78,433.667,0" Height="30" Background="{x:Null}"/>
-        <Label x:Name="vrs" Content="1.1.0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="51,485,0,0" Width="74" Height="26"/>
+        <Label x:Name="lbl_vrs" Content="1.1.0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="51,485,0,0" Width="74" Height="26"/>
 
     </Grid>
 </Window>

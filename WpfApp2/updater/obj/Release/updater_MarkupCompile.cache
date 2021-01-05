@@ -4,11 +4,11 @@
 winexe
 C#
 .cs
-C:\Users\Youcode\Desktop\PC-CLEANER\WpfApp2\updater\obj\Debug\
+C:\Users\Youcode\Desktop\PC-CLEANER\WpfApp2\updater\obj\Release\
 updater
 none
 false
-DEBUG;TRACE
+TRACE
 C:\Users\Youcode\Desktop\PC-CLEANER\WpfApp2\updater\App.xaml
 
 

@@ -25,8 +25,8 @@ namespace WpfApp2
     public partial class updater : Window
     {
         WebClient client = new WebClient();
-        string comprPath = @"C:/Users/Youcode/source/repos/WpfApp2/WpfApp2/bin/Release";
-        string comprLocal = @"C:/Users/Youcode/source/repos/WpfApp2/WpfApp2/bin/versionprecedente.zip";
+        string comprPath = @"C:/Users/Youcode/Desktop/PC-CLEANER/WpfApp2/WpfApp2/bin/Release";
+        string comprLocal = @"C:/Users/Youcode/Desktop/PC-CLEANER/WpfApp2/WpfApp2/bin/versionprecedente.zip";
 
         public updater()
         {
@@ -58,19 +58,13 @@ namespace WpfApp2
                     Environment.Exit(0);
                 }
             });
-            
-          
 
-            client.DownloadFile("https://wafaasbs.weebly.com/uploads/1/3/5/4/135400790/update.zip", @"C:/Users/Youcode/Desktop/Nouveau dossier/update.zip");
-            string zipPath = @"C:/Users/Youcode/Desktop/Nouveau dossier/update.zip";
-            string extractPath = @"C:/Users/Youcode/source/repos/WpfApp2/WpfApp2/bin/Release";
+            client.DownloadFile("https://wafaasbs.weebly.com/uploads/1/3/5/4/135400790/update.zip", @"C:\Users\Youcode\Desktop\PC-CLEANER\Nouveau dossier");
+            string zipPath = @"C:/Users/Youcode/Desktop/PC-CLEANER/Nouveau dossier/update.zip";
+            string extractPath = @"C:/Users/Youcode/Desktop/PC-CLEANER/WpfApp2/WpfApp2/bin/Release";
 
             ZipFile.ExtractToDirectory(zipPath, extractPath);
             Process.Start($"{extractPath}/WpfApp2.exe");
-            
-           
-
-
         }
 
     }

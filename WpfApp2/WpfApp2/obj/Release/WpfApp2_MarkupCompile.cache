@@ -4,11 +4,11 @@
 winexe
 C#
 .cs
-C:\Users\Youcode\Desktop\PC-CLEANER\WpfApp2\WpfApp2\obj\Debug\
+C:\Users\Youcode\Desktop\PC-CLEANER\WpfApp2\WpfApp2\obj\Release\
 WpfApp2
 none
 false
-DEBUG;TRACE
+TRACE
 C:\Users\Youcode\Desktop\PC-CLEANER\WpfApp2\WpfApp2\App.xaml
 21496813752
 
@@ -16,5 +16,5 @@ C:\Users\Youcode\Desktop\PC-CLEANER\WpfApp2\WpfApp2\App.xaml
 161970834139
 MainWindow.xaml;updater.xaml;
 
-False
+True
 

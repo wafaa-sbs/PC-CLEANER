@@ -7,8 +7,9 @@
         mc:Ignorable="d"
         Title="updater" Height="450" Width="800">
     <Grid>
-        <ProgressBar x:Name="progressbar" Value="0" Minimum="0"  Maximum="100" Height="40" Margin="224,73,188,0" VerticalAlignment="Top"/>
-        <Label x:Name="lbl_prcnt" Content="" HorizontalAlignment="Left" Margin="370,73,0,0" VerticalAlignment="Top"/>
-        <Button Content="Button" x:Name="btn" HorizontalAlignment="Left" Margin="329,160,0,0" VerticalAlignment="Top" Width="75" Click="btn_Click"/>
+        <Border Background="#34e7e4" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="422" Margin="0,-1,0,-0.333" VerticalAlignment="Top" Width="793"/>
+        <ProgressBar x:Name="progressbar" Value="0" Minimum="0"  Maximum="100" Height="40" Margin="206,111,206.333,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="prog_pourc" Visibility="Hidden" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Margin="362,117,373.333,0" Height="30" Background="{x:Null}"/>
+        <Button Content="Button" x:Name="btn" Foreground="White" BorderBrush="white" Background="#1f3c88"  HorizontalAlignment="Left" Margin="331,203,0,0" VerticalAlignment="Top" Width="121" Click="btn_Click" Height="38"/>
     </Grid>
 </Window>

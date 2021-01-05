@@ -175,17 +175,9 @@ namespace WpfApp2
                     this.Hide();
                     updater update = new updater();
                     update.ShowDialog();
-                    
-                }
-                else
-                {
-
                 }
             }
-           
         }
-
-
     }
 }
 
